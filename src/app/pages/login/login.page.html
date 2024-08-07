@@ -1,0 +1,54 @@
+<ion-content>
+  <div class="background-header">
+    <img src="assets/icon/icon.png" class="fade-in imgFormVal">
+
+    <div class="background-content directionRadiusLeft">
+      <div class="fade-in" style="padding-right: 30px;">
+
+        <ion-grid fixed>
+          <ion-row class='ion-justify-content-center'>
+            <ion-col size-xl='5' size-lg='5' size-md='10' size-sm='12' size-xs='12'>
+
+              <div class="contentClass">
+                <br>
+                <div class="subTitulo">
+                  Hola,
+                </div>
+                <div class="titulo">
+                  Bienvenido
+                </div>
+              </div>
+
+              <div class="paddContent">
+                <br>
+
+                <ion-input mode="md" type='text' [(ngModel)]='dataForm.user' label="User" label-placement="floating"
+                  fill="outline">
+                </ion-input>
+
+                <br><br>
+
+                <ion-input mode="md" type='password' [(ngModel)]='dataForm.pass' label="Password"
+                  label-placement="floating" fill="outline">
+                </ion-input>
+
+                <div class="ion-text-end">
+                  <br><br><br>
+                  <ion-chip class='iconIonChip' color='dark' (click)='login(dataForm)'>
+                    <ion-label class="labeltxtForm"><b>Ingresar</b></ion-label>
+                    <ion-icon src='/assets/icon/flechader.svg'></ion-icon>
+                  </ion-chip>
+                </div>
+
+              </div>
+
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </div>
+
+    </div>
+
+  </div>
+</ion-content>

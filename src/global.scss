@@ -25,13 +25,218 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
-/**
- * Ionic Dark Mode
- * -----------------------------------------------------
- * For more info, please see:
- * https://ionicframework.com/docs/theming/dark-mode
- */
 
-/* @import "@ionic/angular/css/palettes/dark.always.css"; */
-/* @import "@ionic/angular/css/palettes/dark.class.css"; */
-@import "@ionic/angular/css/palettes/dark.system.css";
+@font-face {
+  font-family: "hm-b";
+  src: url('assets/fonts/HindMadurai-Bold.ttf');
+}
+
+@font-face {
+  font-family: "hm-l";
+  src: url('assets/fonts/HindMadurai-Light.ttf');
+}
+
+@font-face {
+  font-family: "hm-m";
+  src: url('assets/fonts/HindMadurai-Medium.ttf');
+}
+
+@font-face {
+  font-family: "hm-r";
+  src: url('assets/fonts/HindMadurai-Regular.ttf');
+}
+
+@font-face {
+  font-family: "hm-s";
+  src: url('assets/fonts/HindMadurai-SemiBold.ttf');
+}
+
+* {
+  font-family: "hm-r";
+  color: black;
+}
+
+/* Style login INI */
+.background-header {
+  background: linear-gradient(274deg, rgba(1, 55, 145, 0.7133228291316527) 47%, rgba(24, 35, 59, 1) 95%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.background-content {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  margin-top: 80px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.directionRadiusLeft {
+  border-top-left-radius: 68px;
+}
+
+.directionRadiusRight {
+  border-top-right-radius: 68px;
+}
+
+.imgFormVal {
+  height: 60px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/* Style login FIN */
+
+
+//efecto en opciones de lista INI
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 4.5s forwards;
+  -webkit-animation: fadeIn 4.5s forwards;
+  -moz-animation: fadeIn 4.5s forwards;
+  -o-animation: fadeIn 4.5s forwards;
+  -ms-animation: fadeIn 4.5s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+//efecto en opciones de lista FIN
+
+//Style alerts INI
+.alertas {
+  font-family: "hm-b";
+  font-size: 16px !important;
+
+  button {
+    color: var(--ion-color-blue3) !important;
+  }
+
+  .alert-sub-title.sc-ion-alert-ios {
+    font-size: 16px;
+  }
+
+  .alert-message.sc-ion-alert-ios,
+  .alert-input-group.sc-ion-alert-ios {
+    font-size: 17px !important;
+    color: black;
+  }
+}
+
+//Style alerts FIN
+
+.iconIonChip {
+  margin-inline: 8px 4px !important;
+}
+
+.menuIcon {
+  position: absolute !important;
+  height: 30px !important;
+  left: 10px !important;
+  top: 20px !important;
+}
+
+.tamIconMenuLat{
+  height: 30px !important;
+  left: 10px !important;
+  top: 20px !important;
+  // position: absolute !important;
+
+}
+
+.titlePage {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+//INI Color del border en input  fill="outline"
+.select-fill-outline.select-expanded,
+.select-fill-outline.ion-focused {
+  --border-width: 1px;
+  --border-color: var(--ion-color-blue3) !important;
+}
+
+.ion-valid {
+  --highlight-color: var(--ion-color-blue3) !important;
+}
+
+//FIN Color del border en input  fill="outline"
+
+.loaderFull {
+  --spinner-color: var(--ion-color-blue4);
+  --background: none !important;
+  backdrop-filter: blur(2.5px);
+  text-align: center !important;
+  color: black;
+  font-size: 14px !important;
+  font-family: "hm-r" !important;
+}
+
+.contentClass {
+  padding: 20px 25px !important;
+  color: black;
+}
+
+.toastLogin {
+  font-family: "hm-s";
+  font-size: 19px !important;
+  text-align: center;
+  --background: var(--ion-color-blue1);
+  color: black;
+}
+
+.itemtrans {
+  --ion-item-background: transparent;
+}
+
+hr.style-two {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(243deg, rgba(0, 0, 0, 0.25674019607843135) 3%, rgba(255, 255, 255, 1) 52%, rgba(0, 0, 0, 0.2595413165266106) 98%);
+}
+
+.labelTxt {
+  font-size: 18px !important;
+  font-weight: bold !important;
+  color: var(--ion-color-blue3) !important;
+  font-family: "hm-l" !important;
+}
+
+.InputTxt {
+  font-size: 18px !important;
+  // color: var(--ion-color-blue3) !important;
+  font-family: "hm-r" !important;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.avatarMenuLat {
+  width: 60px;
+  height: 60px;
+}
+
+.popoverClass{
+  --background: white ;
+}
+
+.select-label-placement-start .select-wrapper {
+  color: black !important;
+}

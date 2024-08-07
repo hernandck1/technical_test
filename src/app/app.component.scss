@@ -1,5 +1,5 @@
 ion-menu ion-content {
-  --background: var(--ion-item-background, var(--ion-background-color, #fff));
+  --background: linear-gradient(234deg, rgba(6, 53, 142, 1) 52%, rgba(0, 0, 0, 1) 95%);
 }
 
 ion-menu.md ion-content {
@@ -116,4 +116,23 @@ ion-note {
 
 ion-item.selected {
   --color: var(--ion-color-primary);
+}
+
+.dataUser {
+  padding-bottom: 30px;
+}
+
+.txtNameUser {
+  font-size: 20px;
+  color: white;
+}
+
+.txtList {
+  font-size: 17px;
+  color: white;
+  font-family: 'hm-l';
+}
+
+.padIos{
+  padding-top: 50px !important;
 }

@@ -1,0 +1,8 @@
+<div class="paddSearch">
+  <ion-searchbar #searchbar autofocus="true" placeholder='Buscar' animated="true" mode="ios" [(ngModel)]="searchTerm">
+  </ion-searchbar>
+</div>
+
+<ion-item class="backStyle" *ngFor="let item of items | filtersearch: searchTerm" (click)="selectItem(item)" tappable>
+  <ion-label> {{ item?.name }}</ion-label>
+</ion-item>

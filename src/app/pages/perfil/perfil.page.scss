@@ -1,0 +1,49 @@
+.profile-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-picture {
+  position: relative;
+  display: inline-block;
+}
+
+.camera-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.profile-name {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contentDataUser {
+  padding-top: 40px;
+}
+
+.contBtnActuData {
+  text-align: center;
+  padding-top: 40px;
+}
+
+
+.form-item {
+  display: flex;
+  align-items: center;
+}
+
+.labelTxt {
+  flex: 1;
+  max-width: 150px;
+}
+
+.InputTxt {
+  flex: 2;
+}

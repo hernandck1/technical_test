@@ -2,7 +2,7 @@ import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'techtest.catacoly.hd',
-  appName: 'technical_test',
+  appName: 'CIC technical test',
   webDir: 'www'
 };
 

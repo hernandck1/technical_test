@@ -1,0 +1,82 @@
+<ion-content>
+  <div class="background-header">
+    <img src="assets/icon/icon.png" class="fade-in imgFormVal">
+
+    <div class="titlePage fade-in">
+      Mi Perfil
+    </div>
+
+    <ion-menu-button class="menuIcon">
+      <img src="assets/icon/menu.png" class="fade-in tamIconMenuLat">
+    </ion-menu-button>
+
+    <div class="background-content directionRadiusRight">
+
+      <div class="fade-in" class="contentClass itemtrans">
+
+        <div class="txtStandar" *ngIf="dataUser.user">
+
+          <div class="profile-container">
+            <div class="profile-picture">
+              <img *ngIf="dataUser.image === ''" src="assets/icon/profile.png" alt="Profile Image" class="avatar">
+              <img *ngIf="dataUser.image !== ''" [src]="dataUser.image" alt="Profile Image" class="avatar">
+              <img src="assets/icon/camera.png" alt="Camera Icon" class="camera-icon" (click)="changeImage()">
+            </div>
+            <div class="profile-name ion-text-capitalize">{{dataUser.user}}</div>
+          </div>
+
+          <div class="contentDataUser">
+
+            <ion-item class="form-item">
+              <ion-label class="labelTxt">Name</ion-label>
+              <ion-input type="text" class="InputTxt ion-text-start ion-text-capitalize" [(ngModel)]="dataUser.name">
+              </ion-input>
+            </ion-item>
+
+            <ion-item class="form-item">
+              <ion-label class="labelTxt">Surname</ion-label>
+              <ion-input class="InputTxt ion-text-start ion-text-capitalize" [(ngModel)]="dataUser.lastname">
+              </ion-input>
+            </ion-item>
+
+            <ion-item class="form-item">
+              <ion-label class="labelTxt">Email</ion-label>
+              <ion-input type="email" class="InputTxt ion-text-start ion-text-lowercase" [(ngModel)]="dataUser.email">
+              </ion-input>
+            </ion-item>
+
+            <ion-item class="form-item">
+              <ion-label class="labelTxt">Languaje</ion-label>
+              <ion-select mode="ios" okText="Aceptar" cancelText="Cancelar" [interfaceOptions]="customAlertOptions"
+                class="InputTxt ion-text-start" [(ngModel)]='dataUser.lan' color="blackprop">
+                <ion-select-option class="InputTxt" *ngFor="let language of languages" [value]="language">
+                  {{language | titlecase}}
+                </ion-select-option>
+              </ion-select>
+            </ion-item>
+
+            <ion-item class="form-item">
+              <ion-label class="labelTxt">Time Zone</ion-label>
+              <ion-input class="InputTxt ion-text-start" placeholder="Seleccione" [(ngModel)]='dataUser.timezone'
+                (click)="listPopoverSearch($event)"></ion-input>
+            </ion-item>
+
+            <div class="contBtnActuData">
+              <ion-chip  color='blackprop' (click)='actuData()'>
+                <ion-icon class='iconIonChip' src='/assets/icon/save.svg'></ion-icon>
+                <b>Actualizar información</b>
+              </ion-chip>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+</ion-content>

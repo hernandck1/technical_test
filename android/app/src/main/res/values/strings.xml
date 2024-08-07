@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">CIC technical test</string>
+    <string name="title_activity_main">CIC technical test</string>
+    <string name="package_name">techtest.catacoly.hd</string>
+    <string name="custom_url_scheme">techtest.catacoly.hd</string>
+</resources>
