@@ -45,6 +45,10 @@ Para recortar las imágenes tomadas o seleccionadas, se utiliza un complemento d
 
 Los datos de la aplicación se manejan de forma local utilizando **localStorage**. Esto se debe a que los requisitos del proyecto no especificaban la necesidad de una conexión a una base de datos externa. Sin embargo, los datos presentados en el módulo "Mi Perfil" son actualizables, permitiendo al usuario modificar su información según sea necesario.
 
+## Usuario para testeo:
+user: hernandck
+pass: test123
+
 ## Desarrollador
 
 **Hernan David Catacoly**
@@ -52,3 +56,4 @@ Los datos de la aplicación se manejan de forma local utilizando **localStorage*
 Correo: [hernandck@msn.com](mailto:hernandck@msn.com)
 
 ---
+
